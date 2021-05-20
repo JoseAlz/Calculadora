@@ -18,7 +18,6 @@ function operar(tecla) {
 }
 
 // Cambio de color
-
 var r = $(".ripple"),
     p = $(".pantalla");
 
