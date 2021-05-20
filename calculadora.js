@@ -1,4 +1,4 @@
-// Script Calculadora
+// *** Script Calculadora
 
 function operar(tecla) {
     var pantalla = document.getElementsByClassName("modulo");
@@ -18,6 +18,7 @@ function operar(tecla) {
 }
 
 // Cambio de color
+
 var r = $(".ripple"),
     p = $(".pantalla");
 
