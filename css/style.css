@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /*by Sarah Backhouse**/
+    background-color: #fff;
+    background-image: linear-gradient( 90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+    background-size: 100% 1.2em;
+}
+
+.title {
+    color: #80ffdb;
+}
+
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 30%;
+    min-width: 400px;
+    background: rgb(133, 139, 135);
+    box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.58);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.pantalla {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    background: #557174;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    box-shadow: 0px 4px 24px -4px rgba(0, 0, 0, 0.58);
+}
+
+.cntGeneral {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cnt {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cnt .title {
+    padding: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    float: left;
+    width: 50%;
+}
+
+.icon {
+    width: 50%;
+    padding-right: 20px;
+    float: right;
+}
+
+.icon i {
+    margin: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.icon i.far fa-coffee {
+    margin-right: 0px;
+}
+
+.modulo {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.teclado {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+}
+
+.teclado div {
+    display: inline-block;
+    width: 23%;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.teclado div span {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.teclado div span:active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.igual {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 150px;
+    border-radius: 50%;
+    left: 85%;
+    transform: translateX(-50%);
+    background: #9dad7f;
+    box-shadow: 0px 4px 24px -4px rgba(0, 0, 0, 0.58);
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 20;
+}
+
+.igual:hover {
+    box-shadow: 0px 6px 40px -4px rgba(0, 0, 0, 0.58);
+    background: #91091e;
+}
+
+.paleta {
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 50;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0px 6px 40px -4px rgba(0, 0, 0, 0.58);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+
+.paleta span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+/* eleccion del color */
+
+.a {
+    background: #867ae9;
+    /*#009688 */
+}
+
+.b {
+    background: #fc5404;
+}
+
+.c {
+    background: #21094e;
+}
+
+.d {
+    background: #a7bbc7;
+}
+
+.e {
+    background: #fa9905;
+}
+
+.ripple {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+}

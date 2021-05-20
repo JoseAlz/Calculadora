@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculadora</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+<div class="calculadora">
+  <div class="paleta">
+    <span class="a" onclick="cambioColor('#867ae9')"></span> 
+    <span class="b" onclick="cambioColor('#fc5404')"></span>
+    <span class="c" onclick="cambioColor('#21094e')"></span>
+    <span class="d" onclick="cambioColor('#a7bbc7')"></span>
+    <span class="e" onclick="cambioColor('#fa9905')"></span>
+  </div>
+  <div onclick="operar('=')" class="igual">
+    =
+  </div>
+  <div class="pantalla">
+    <div class="ripple">
+    </div>
+    <div class="cntGeneral">
+      <div class="cnt">
+      <div class="title">Calculadora</div>
+      <div class="icon">
+        <i class="material-icons" onclick="paleta()">palette</i>
+        <i class="far fa-coffee fa-2x" style="color: #80ffdb;"></i>
+      </div>
+    </div>
+    <div class="modulo"> </div>
+    </div>
+  </div>
+  <div class="teclado">
+    <div><span onclick="operar(7)">7</span></div>
+    <div><span onclick="operar(8)">8</span></div>
+    <div><span onclick="operar(9)">9</span></div>
+    <div><span onclick="operar('/')">÷</span></div>
+    <div><span onclick="operar(4)">4</span></div>
+    <div><span onclick="operar(5)">5</span></div>
+    <div><span onclick="operar(6)">6</span></div>
+    <div><span onclick="operar('*')">x</span></div>
+    <div><span onclick="operar(1)">1</span></div>
+    <div><span onclick="operar(2)">2</span></div>
+    <div><span onclick="operar(3)">3</span></div>
+    <div><span onclick="operar('-')">-</span></div>
+    <div><span onclick="operar('c')"><i class="material-icons">backspace</i></span></div>
+    <div><span onclick="operar('0')">0</div>
+    <div><span onclick="operar('.')">.</span></div>
+    <div><span onclick="operar('+')">+</span></div>
+  </div>
+</div>
+ 
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="calculadora.js"> </script>
+  </body>
+  </html> 
