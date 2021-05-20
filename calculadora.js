@@ -1,4 +1,4 @@
-// *** Script Calculadora
+// *** Script Calculadora ***
 
 function operar(tecla) {
     var pantalla = document.getElementsByClassName("modulo");
